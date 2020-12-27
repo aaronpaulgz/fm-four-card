@@ -1,0 +1,102 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+
+  --Primary-font: "Poppins", "sans-serif";
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  background-color: var(--Very-Light-Gray);
+}
+
+body {
+  width: 375px;
+  max-width: 1200px;
+  /* height: 100%; */
+  margin: 0 auto;
+  /* border: solid 1px red; */
+  font-family: var(--Primary-font);
+  color: var(--Very-Dark-Blue);
+}
+
+.presentation {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.presentation h1 {
+  font-weight: 200;
+  color: var(--Grayish-Blue);
+}
+
+.presentation h2 {
+  font-weight: 600;
+}
+
+.presentation h3 {
+  margin: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--Grayish-Blue);
+}
+
+.border--1 {
+  border-top: solid 8px var(--Cyan);
+}
+.border--2 {
+  border-top: solid 8px var(--Red);
+}
+.border--3 {
+  border-top: solid 8px var(--Orange);
+}
+.border--4 {
+  border-top: solid 8px var(--Blue);
+}
+
+.cards--container {
+  padding: 0 1rem;
+}
+
+.card {
+  min-height: 180px;
+  margin: 1.8rem 0;
+  padding: 2rem 1rem;
+  border-radius: 0.4rem;
+
+  -webkit-box-shadow: 0px 12px 12px 0px rgba(193, 207, 222, 1);
+  -moz-box-shadow: 0px 12px 12px 0px rgba(193, 207, 222, 1);
+  box-shadow: 0px 12px 12px 0px rgba(193, 207, 222, 1);
+}
+
+.card p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card span {
+  font-size: 0.9rem;
+  color: var(--Grayish-Blue);
+}
+
+.img--container {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.4rem 0 0 0;
+}
