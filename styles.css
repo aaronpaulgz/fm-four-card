@@ -19,7 +19,6 @@
 
 html {
   width: 100vw;
-  /* height: 100vh; */
   display: flex;
   background-color: var(--Very-Light-Gray);
 }
@@ -27,7 +26,6 @@ html {
 body {
   width: 375px;
   max-width: 1200px;
-  /* height: 100%; */
   margin: 0 auto;
   /* border: solid 1px red; */
   font-family: var(--Primary-font);
@@ -78,9 +76,9 @@ body {
   padding: 2rem 1rem;
   border-radius: 0.4rem;
 
-  -webkit-box-shadow: 0px 12px 12px 0px rgba(193, 207, 222, 1);
-  -moz-box-shadow: 0px 12px 12px 0px rgba(193, 207, 222, 1);
-  box-shadow: 0px 12px 12px 0px rgba(193, 207, 222, 1);
+  -webkit-box-shadow: 0px 10px 72px 4px rgba(192, 204, 224, 0.6);
+  -moz-box-shadow: 0px 10px 72px 4px rgba(192, 204, 224, 0.6);
+  box-shadow: 0px 10px 72px 4px rgba(192, 204, 224, 0.6);
 }
 
 .card p {
@@ -95,8 +93,50 @@ body {
 }
 
 .img--container {
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   justify-content: flex-end;
   margin: 1.4rem 0 0 0;
+}
+
+@media screen and (min-width: 720px) {
+  body {
+    width: 100%;
+  }
+
+  .presentation {
+    padding: 2.2rem;
+  }
+
+  .presentation h1,
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .presentation h3 {
+    max-width: 520px;
+    margin: 8px auto;
+    font-size: 1rem;
+  }
+
+  .cards--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+
+  .column--1,
+  .column--2,
+  .column--3 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    min-width: 280px;
+    max-width: 320px;
+  }
 }
